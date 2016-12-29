@@ -1,0 +1,95 @@
+/**
+ * 变量
+ * @author 墨萧<hancoson@163.com>
+ * @time 2016/06/06
+ * @version 0.1.0
+ */
+
+/**
+* 移动端 Rem 基准值
+*
+**/
+$px: (1/100)+rem;
+
+/**
+* Color
+*
+**/
+
+$blue-base: #2ac4f6;
+$blue-hover: #0aaee3;
+
+$red-base: #F00;
+
+$orange-base: #ff6d33;
+
+$gray-base: #000;
+$gray-dark: #333;
+$gray-darker: #666;
+$gray-darker: #bcbcbc;
+
+/**
+* Font
+*
+**/
+$m-font-size: 18*$px;
+/**
+* Width
+*
+**/
+$m-max-width: 720px;
+
+/**
+*  继承代码
+**/
+
+//border-box
+.border-box {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+//旋转360
+.transition {
+    -moz-transition: -moz-transform 0.3s ease;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+//截取长度显示省略号
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//滚动条
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 3px;
+    background-color: #fff;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, .3);
+    background-color: #f8465b;
+}
+
+/**
+ * flex
+**/
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}

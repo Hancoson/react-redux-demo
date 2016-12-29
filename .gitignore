@@ -1,0 +1,14 @@
+#OS
+.DS_Store
+Thumbs.db
+
+#node
+/node_modules
+npm-debug.log
+.log
+
+#IDE
+.idea
+
+#www
+/dist
