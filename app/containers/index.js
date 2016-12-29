@@ -10,6 +10,6 @@ export default class Index extends Compontent{
     super(porps)
   }
   render(){
-    <div>Index</div>
+    <div>Index1dffsd</div>
   }
 }

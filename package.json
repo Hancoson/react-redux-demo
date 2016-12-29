@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --port 8089 --hot --content-base --config ./webpack.config.js",
+    "start": "webpack-dev-server --progress --inline --colors --port 8089 --hot --content-base --config ./webpack.config.js --open",
     "build": "webpack --progress --config ./webpack.pdct.config.js"
   },
   "author": "hancoson@163.com",
