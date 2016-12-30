@@ -4,11 +4,10 @@
  */
 import React,{Compontent} from 'react'
 
-export default class Home extends Compontent{
-  constructor(porps){
-    super(porps)
-  }
+class Home extends Compontent{
+
   render(){
     <div>Home</div>
   }
 }
+export default Home

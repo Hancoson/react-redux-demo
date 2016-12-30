@@ -4,11 +4,10 @@
  */
 import React,{Compontent} from 'react'
 
-export default class App extends Compontent{
-  constructor(porps){
-    super(porps)
-  }
+class App extends Compontent{
+
   render(){
     <div>app</div>
   }
 }
+export default App

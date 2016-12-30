@@ -5,11 +5,10 @@
 
 import React,{Compontent} from 'react'
 
-export default class Index extends Compontent{
-  constructor(porps){
-    super(porps)
-  }
+class Index extends Compontent{
+
   render(){
     <div>Index1dffsd</div>
   }
 }
+export default Index

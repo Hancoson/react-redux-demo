@@ -4,11 +4,10 @@
  */
 import React,{Compontent} from 'react'
 
-export default class About extends Compontent{
-  constructor(porps){
-    super(porps)
-  }
+class About extends Compontent{
+
   render(){
     <div>about</div>
   }
 }
+export default About
