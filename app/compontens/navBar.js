@@ -12,17 +12,20 @@ export default class NavBar extends Component {
   render() {
     return (
       <header>
-        <ul className="main nav">
-          <li>
-            <IndexLink to="/" activeClassName='active'>首页</IndexLink>
-          </li>
-          <li>
-            <Link to="/items" activeClassName='active'>文章</Link>
-          </li>
-          <li>
-            <Link to="/about" activeClassName='active'>关于</Link>
-          </li>
-        </ul>
+        <div className='main'>
+          <Link to="/" className='logo'></Link>
+          <ul className="nav">
+            <li>
+              <Link to="/about" activeClassName='active'>关于</Link>
+            </li>
+            <li>
+              <Link to="/items" activeClassName='active'>文章</Link>
+            </li>
+            <li>
+              <IndexLink to="/" activeClassName='active'>首页</IndexLink>
+            </li>
+          </ul>
+        </div>
       </header>
     )
   }

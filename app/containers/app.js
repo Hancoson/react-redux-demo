@@ -12,9 +12,7 @@ export default class App extends Component {
       <div>
         <NavBar />
         <section className="main">
-          <div className="panel-body">
-            {this.props.children}
-          </div>
+          {this.props.children}
         </section>
       </div>
     )

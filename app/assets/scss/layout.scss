@@ -8,13 +8,14 @@ body{
   background: #f4f4f4;
 }
 .main{
-  max-width: 1240px;
+  width: 1200px;
   position: relative;
   margin: 0 auto;
 }
 section{
   @extend .border-box;
   width: 100%;
+  margin-top: 40px;
 }
 header{
   background: #31b9ff;
@@ -23,20 +24,21 @@ header{
   border-bottom:#f0f0f0 1px solid;
   color: #fff;
   .logo{
-    height:40px;
+    height:30px;
     width: 160px;
     float: left;
     background: url('http://daily.zhihu.com/img/Web_Logo.png') no-repeat;
     background-size: contain;
-    margin-top: 15px;
+    margin-top: 5px;
   }
   ul{
     float: right;
     height: 40px;
     li{
-      float: left;
+      float: right;
       margin-left: 20px;
       font-size: 16px;
+      border-bottom: 0;
       a{
         padding: 0 20px;
         height: 40px;
@@ -49,6 +51,8 @@ header{
     }
   }
 }
+
+
 
 footer{
   width: 100%;
