@@ -15,11 +15,11 @@ module.exports = {
 		]
 	},
 	output   : {
-		// publicPath: 'http://localhost:8089/',
-		// filename: './dist/js/bundle.js'
-		path      : path.resolve(__dirname, 'dist'),
+		publicPath: 'http://localhost:8089/',
+		filename: './dist/js/bundle.js'
+		/*path      : path.resolve(__dirname, 'dist'),
 		publicPath: "./dist/js/",
-		filename  : "bundles.js"
+		filename  : "bundles.js"*/
 	},
 	module   : {
 		loaders: [

@@ -5,39 +5,6 @@
  * @version 0.1.0
  */
 
-/**
-* 移动端 Rem 基准值
-*
-**/
-$px: (1/100)+rem;
-
-/**
-* Color
-*
-**/
-
-$blue-base: #2ac4f6;
-$blue-hover: #0aaee3;
-
-$red-base: #F00;
-
-$orange-base: #ff6d33;
-
-$gray-base: #000;
-$gray-dark: #333;
-$gray-darker: #666;
-$gray-darker: #bcbcbc;
-
-/**
-* Font
-*
-**/
-$m-font-size: 18*$px;
-/**
-* Width
-*
-**/
-$m-max-width: 720px;
 
 /**
 *  继承代码
@@ -68,7 +35,7 @@ $m-max-width: 720px;
 
 //滚动条
 .scrollbar::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     background-color: #F5F5F5;
 }
@@ -80,16 +47,19 @@ $m-max-width: 720px;
 
 .scrollbar::-webkit-scrollbar-thumb {
     border-radius: 6px;
-    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, .3);
-    background-color: #f8465b;
+    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, .2);
+    background-color: #07a1d6;
 }
+
 
 /**
  * flex
 **/
+
 .flex {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
 }
+

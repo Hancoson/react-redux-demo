@@ -2,12 +2,21 @@
  * @author Guoxing.Han(hancoson#163.com)
  * @time 2016/12/29.
  */
-import React,{Compontent} from 'react'
+import React, { Component } from 'react'
 
-class App extends Compontent{
+import NavBar from '../compontens/navBar'
 
-  render(){
-    <div>app</div>
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <NavBar />
+        <section className="main">
+          <div className="panel-body">
+            {this.props.children}
+          </div>
+        </section>
+      </div>
+    )
   }
 }
-export default App

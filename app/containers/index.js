@@ -3,12 +3,13 @@
  * @time 2016/12/29.
  */
 
-import React,{Compontent} from 'react'
+import React, { Component } from 'react'
 
-class Index extends Compontent{
+export default class Index extends Component {
 
-  render(){
-    <div>Index1dffsd</div>
+  render() {
+    return (
+      <div>Hello Word!</div>
+    )
   }
 }
-export default Index
