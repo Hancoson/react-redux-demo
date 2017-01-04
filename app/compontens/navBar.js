@@ -5,28 +5,39 @@
 import React, { Component } from 'react'
 import { IndexLink, Link } from 'react-router'
 
+import { Menu, Icon } from 'antd';
+const SubMenu = Menu.SubMenu;
+const MenuItemGroup = Menu.ItemGroup;
 export default class NavBar extends Component {
   constructor(porps) {
-    super(porps)
+    super(porps);
+    this.state = {
+      current: 'index'
+    }
+  }
+  handleClick(e) {
+    console.log('click ', e);
+    this.setState({
+      current: e.key,
+    });
   }
   render() {
     return (
-      <header>
-        <div className='main'>
-          <Link to="/" className='logo'></Link>
-          <ul className="nav">
-            <li>
-              <Link to="/about" activeClassName='active'>关于</Link>
-            </li>
-            <li>
-              <Link to="/items" activeClassName='active'>文章</Link>
-            </li>
-            <li>
-              <IndexLink to="/" activeClassName='active'>首页</IndexLink>
-            </li>
-          </ul>
-        </div>
-      </header>
+      <Menu
+        onClick={this.handleClick.bind(this)}
+        selectedKeys={[this.state.current]}
+        mode="horizontal"
+        >
+        <Menu.Item key="index">
+          <IndexLink to="/">首页</IndexLink>
+        </Menu.Item>
+        <Menu.Item key="items">
+          <Link to="/items">文章</Link>
+        </Menu.Item>
+        <Menu.Item key="about">
+          <Link to="/about">关于</Link>
+        </Menu.Item>
+      </Menu>
     )
   }
 }

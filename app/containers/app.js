@@ -9,7 +9,7 @@ import NavBar from '../compontens/navBar'
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div className="main">
         <NavBar />
         <section className="main">
           {this.props.children}

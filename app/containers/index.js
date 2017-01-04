@@ -9,7 +9,7 @@ export default class Index extends Component {
 
   render() {
     return (
-      <div>Hello Word!</div>
+      <div className='index-warp'>Hello Word!</div>
     )
   }
 }

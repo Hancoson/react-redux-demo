@@ -5,7 +5,7 @@
 */
 @import 'variables';
 body{
-  background: #f4f4f4;
+  
 }
 .main{
   width: 1200px;
@@ -17,41 +17,12 @@ section{
   width: 100%;
   margin-top: 40px;
 }
-header{
-  background: #31b9ff;
-  width: 100%;
-  height: 40px;
-  border-bottom:#f0f0f0 1px solid;
-  color: #fff;
-  .logo{
-    height:30px;
-    width: 160px;
-    float: left;
-    background: url('http://daily.zhihu.com/img/Web_Logo.png') no-repeat;
-    background-size: contain;
-    margin-top: 5px;
-  }
-  ul{
-    float: right;
-    height: 40px;
-    li{
-      float: right;
-      margin-left: 20px;
-      font-size: 16px;
-      border-bottom: 0;
-      a{
-        padding: 0 20px;
-        height: 40px;
-        line-height: 40px;
-        &.active{
-          background: #fff;
-          color: #31b9ff
-        }
-      }
-    }
-  }
-}
 
+
+.index-warp{
+  text-align: center;
+  padding: 100px 0
+}
 
 
 footer{
