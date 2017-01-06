@@ -11,9 +11,9 @@ const MenuItemGroup = Menu.ItemGroup;
 export default class NavBar extends Component {
   constructor(porps) {
     super(porps);
-
+    console.log(this.props.pathname,11111)
     this.state = {
-      current: 'index'
+      current: this.props.pathname||'/index'
     }
   }
   handleClick(e) {
@@ -29,13 +29,13 @@ export default class NavBar extends Component {
         selectedKeys={[this.state.current]}
         mode="horizontal"
         >
-        <Menu.Item key="index">
+        <Menu.Item key="/index">
           <IndexLink to="/">首页</IndexLink>
         </Menu.Item>
-        <Menu.Item key="items">
+        <Menu.Item key="/items">
           <Link to="/items">文章</Link>
         </Menu.Item>
-        <Menu.Item key="about">
+        <Menu.Item key="/about">
           <Link to="/about">关于</Link>
         </Menu.Item>
       </Menu>
