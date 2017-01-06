@@ -11,6 +11,7 @@ const MenuItemGroup = Menu.ItemGroup;
 export default class NavBar extends Component {
   constructor(porps) {
     super(porps);
+
     this.state = {
       current: 'index'
     }

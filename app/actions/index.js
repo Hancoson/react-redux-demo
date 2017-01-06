@@ -19,15 +19,15 @@ export const getSuccess = (data) => {
   }
 }
 
-function fetchPosts (){
-  console.log(321)
+function fetchPosts() {
   return dispatch => {
     return fetch('data.json')
       .then((res) => {
-        console.log(res.status);
+        console.log(res,1);
         return res.json()
       })
       .then((data) => {
+        console.log(data, 2);
         dispatch(getSuccess(data))
       })
       .catch((e) => {

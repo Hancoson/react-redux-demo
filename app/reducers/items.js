@@ -8,7 +8,7 @@ const itemsReducer = (state = [], action) => {
 
   switch (action.type) {
     case actionType.GETSUCCESS:
-      return state;
+      return action.data;
 
     case actionType.EMPTYDATA:
       return [];

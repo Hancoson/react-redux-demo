@@ -5,7 +5,6 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {Input, Button, DatePicker} from 'antd';
-const RangePicker = DatePicker.RangePicker;
 import {fetchPostsIfNeeded,emptyData} from '../actions/index'
 
 class Items extends Component {
@@ -20,16 +19,19 @@ class Items extends Component {
   }
 
   render() {
-    const {lists, fetchPostsIfNeeded, emptyData} = this.props
+    console.log(this.props);
+    const {items, fetchPostsIfNeeded, emptyData} = this.props
+
     return (
       <div className='items-warp'>
         <div className='bar clearfix'>
           <DatePicker disabledDate={this.disabledDate} onChange={this.handleClick.bind(this)}/>
-        </div>
-        <div className="">
           <Button onClick={() => fetchPostsIfNeeded()}>加载数据</Button>
           <Button onClick={() => emptyData()}>清除数据</Button>
-          {lists.map((e, index) =>
+        </div>
+        <div className="">
+
+          {items.map((e, index) =>
             <div className="well well-sm" key={index}><a href={e.url} target="_blank">{e.title}</a></div>
           )}
         </div>
@@ -38,13 +40,14 @@ class Items extends Component {
   }
 }
 
-const getList = state => {
+const getItems = state => {
+  console.log(state,'-----');
   return {
-    lists: state.items
+    items: state.itemsReducer
   }
 }
 
 export default connect(
-  getList,
+  getItems,
   {fetchPostsIfNeeded, emptyData}
 )(Items)
