@@ -6,6 +6,7 @@
 import keyMirror from 'keymirror';
 
 export default keyMirror({
-  'EMPTYDATA': null,
-  'GETSUCCESS': null
+  'EMPTYDATA' : null,
+  'GETSUCCESS': null,
+  'CHANGETIME': null
 });

@@ -168,5 +168,40 @@ footer {
     width: 100%;
     background: #f7f7f7;
     padding: 10px; }
+  .items-warp .gutter-example .ant-row > div {
+    border: 0; }
+  .items-warp .gutter-box {
+    background: #00A0E9;
+    padding: 5px 0; }
+  .items-warp .item {
+    display: block;
+    padding: 10px;
+    height: 100px;
+    position: relative;
+    background: #f5f5f5;
+    border-radius: 10px;
+    margin: 10px 0 10px;
+    transition: all .2s linear 0s; }
+    .items-warp .item:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); }
+    .items-warp .item img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      float: left;
+      margin-right: 10px; }
+    .items-warp .item p {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #31b9ff; }
+    .items-warp .item sub {
+      font-size: 13px;
+      position: absolute;
+      bottom: 13px;
+      right: 13px;
+      color: #999; }
+  .items-warp .loading {
+    margin: 100px auto 0;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

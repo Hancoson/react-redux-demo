@@ -5,6 +5,8 @@
  */
 import fetch from 'isomorphic-fetch';
 import assign from 'object-assign';
+import Config from './../constants/config'
+import  {getDate} from './../utils/getDate'
 
 export const emptyData = () => {
   return {
@@ -12,6 +14,13 @@ export const emptyData = () => {
   }
 }
 
+
+export const changeTime = (time) => {
+  return {
+    type: 'CHANGETIME',
+    time
+  }
+}
 export const getSuccess = (data) => {
   return {
     type: 'GETSUCCESS',
@@ -19,14 +28,16 @@ export const getSuccess = (data) => {
   }
 }
 
-function fetchPosts() {
+const fetchPosts = () => {
+  console.log(Config)
   return dispatch => {
-    return fetch('data.json')
+    return fetch(Config.YAHOO + Config.API + getDate() + Config.YAHOO_SUFFIX)
       .then((res) => {
-        console.log(res,1);
+        console.log(res, 1);
         return res.json()
       })
       .then((data) => {
+        data = data.query.results.json;
         console.log(data, 2);
         dispatch(getSuccess(data))
       })
