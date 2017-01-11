@@ -1,4 +1,4 @@
-# react-redux demo
+# React-redux Zhihu Daily
 > 一个React+Redux版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 
 ## 技术实现
@@ -31,7 +31,7 @@
 ## API说明
 
 ### 1、获取单条消息
-- URL: http://news-at.zhihu.com/api/4/news/{id}
+- URL: `http://news-at.zhihu.com/api/4/news/{id}`
 - 分析：
     * `body` : HTML 格式的新闻
     * `image-source` : 图片的内容提供方。为了避免被起诉非法使用图片，在显示图片时最好附上其版权信息。
