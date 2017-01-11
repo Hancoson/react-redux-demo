@@ -1,7 +1,7 @@
 {
   "name": "react-redux",
-  "version": "1.0.0",
-  "description": "A react-redux demo",
+  "version": "2.0.0",
+  "description": "A react-redux ZhihuDaily demo",
   "repository": {
     "type": "git",
     "url": "https://github.com/Hancoson/react-redux-demo.git"
@@ -12,6 +12,10 @@
     "build": "webpack --progress --config ./webpack.pdct.config.js"
   },
   "author": "hancoson@163.com",
+  "devEngines": {
+    "node": "4.x || 5.x || 6.x || 7.x",
+    "npm": "2.x || 3.x || 4.x"
+  },
   "dependencies": {
     "antd": "^2.0.0",
     "isomorphic-fetch": "^2.2.1",

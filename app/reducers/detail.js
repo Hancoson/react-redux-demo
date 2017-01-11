@@ -4,14 +4,16 @@
  */
 import actionType from '../constants/actionType';
 
-const timeReducer = (state = '', action) => {
+const detailReducer = (state = {}, action) => {
 
   switch (action.type) {
-    case actionType.CHANGETIME:
+    case actionType.DETAILDATA:
       return action.data;
+    case actionType.EMPTYDATA:
+      return {};
     default:
       return state;
   }
 };
 
-export default timeReducer;
+export default detailReducer;

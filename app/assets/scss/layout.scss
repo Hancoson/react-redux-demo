@@ -5,7 +5,6 @@
 */
 @import 'variables';
 body{
-  
 }
 .main{
   width: 1200px;
@@ -28,10 +27,15 @@ section{
 footer{
   width: 100%;
   text-align: center;
-  padding: 24px 0;
+  padding: 20px 0;
   color: #999;
-  font-size: 24px;
+  font-size: 13px;
   background: #fff;
   border-top:#f0f0f0 1px solid;
+  margin-top: 20px;
 }
 
+.loading{
+  margin: 100px auto;
+  text-align: center;
+}

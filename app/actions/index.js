@@ -6,7 +6,6 @@
 import fetch from 'isomorphic-fetch';
 import assign from 'object-assign';
 import Config from './../constants/config'
-import  {getDate} from './../utils/getDate'
 
 export const emptyData = () => {
   return {
@@ -14,32 +13,19 @@ export const emptyData = () => {
   }
 }
 
-
-export const changeTime = (time) => {
-  return {
-    type: 'CHANGETIME',
-    time
-  }
-}
-export const getSuccess = (data) => {
-  return {
-    type: 'GETSUCCESS',
-    data
-  }
-}
-
-const fetchPosts = () => {
-  console.log(Config)
+//获取列表数据
+export const fetchPosts = (time) => {
   return dispatch => {
-    return fetch(Config.YAHOO + Config.API + getDate() + Config.YAHOO_SUFFIX)
+    return fetch(Config.YAHOO + Config.API + time + Config.YAHOO_SUFFIX)
       .then((res) => {
-        console.log(res, 1);
         return res.json()
       })
       .then((data) => {
         data = data.query.results.json;
-        console.log(data, 2);
-        dispatch(getSuccess(data))
+        dispatch({
+          type: 'GETSUCCESS',
+          data: assign({}, data)
+        })
       })
       .catch((e) => {
         console.log(e.message)
@@ -47,13 +33,27 @@ const fetchPosts = () => {
   }
 }
 
-// 这里的方法返回一个函数进行异步操作
-export function fetchPostsIfNeeded() {
-  // 它让你选择接下来 dispatch 什么
-  return (dispatch) => {
-    return dispatch(fetchPosts())
+//获取单条数据
+export const fetchDetailPosts = (id) => {
+  return dispatch => {
+    return fetch(Config.YAHOO + Config.NEWS + id + Config.YAHOO_SUFFIX)
+      .then((res) => {
+        return res.json()
+      })
+      .then((data) => {
+        data = data.query.results.json;
+        console.log(data)
+        dispatch({
+          type: 'DETAILDATA',
+          data: assign({}, data)
+        })
+      })
+      .catch((e) => {
+        console.log(e.message)
+      })
   }
 }
+
 
 
 

@@ -16,6 +16,6 @@ export default (
     <IndexRoute component={Index} />
     <Route path="about" component={About} />
     <Route path="items" component={Items} />
-    <Route path="detail/:id" component={Detail} />
+    <Route path="news/:id" component={Detail} />
   </Route>
 )
