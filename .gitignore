@@ -2,6 +2,9 @@
 .DS_Store
 Thumbs.db
 
+#page
+index.html
+
 #node
 /node_modules
 npm-debug.log
