@@ -1107,4 +1107,28 @@ footer {
       right: 13px;
       color: #999; }
 
+/**
+* @author Guoxing.Han(hancoson#163.com)
+* @time 2017/1/13.
+*/
+.about-warp h1 {
+  padding-bottom: 5px;
+  border-bottom: 1px #f0f0f0 solid;
+  font-size: 32px;
+  margin-bottom: 20px; }
+.about-warp ul {
+  padding-left: 20px; }
+  .about-warp ul li {
+    line-height: 1.6;
+    list-style: circle; }
+.about-warp h2 {
+  font-size: 26px; }
+.about-warp code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace; }
+
 /*# sourceMappingURL=main.css.map */

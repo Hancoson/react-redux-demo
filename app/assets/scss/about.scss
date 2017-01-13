@@ -1,0 +1,43 @@
+/**
+* @author Guoxing.Han(hancoson#163.com)
+* @time 2017/1/13.
+*/
+.about-warp {
+  h1 {
+    padding-bottom: 5px;
+    border-bottom: 1px #f0f0f0 solid;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  ul {
+    padding-left: 20px;
+    li {
+      line-height: 1.6;
+      list-style: circle;
+    }
+  }
+  h2 {
+    font-size: 26px;
+  }
+  code{
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+  }
+  pre{
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}

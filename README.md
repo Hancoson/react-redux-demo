@@ -3,6 +3,8 @@
 
 ## 技术实现
 > 采用React+Redux+ES6+webpack+antd实现
+
+> React-hot-load 热替换
  
 ## 运行
 - 安装 `npm install(yarn)`
