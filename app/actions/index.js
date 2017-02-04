@@ -7,7 +7,7 @@ import fetch from 'isomorphic-fetch';
 import assign from 'object-assign';
 import Config from './../constants/config'
 
-export const emptyData = () => {
+export const emptyData  = () => {
   return {
     type: 'EMPTYDATA'
   }
