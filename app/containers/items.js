@@ -28,6 +28,10 @@ const getItems = state => {
   }
 }
 
+/**
+ * @getItems (state)
+ * @defaultFetchData, @fetchData, @emptyData (dispatch)
+ */
 export default connect(
   getItems,
   {defaultFetchData, fetchData, emptyData}
