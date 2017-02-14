@@ -1,7 +1,7 @@
 # React-redux Zhihu Daily
 > 一个React+Redux版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 
-> _你觉得好就给个Star或者Watch吧，不要Fork._
+> _你觉得好就给个 Star 或者 Watch 吧，不要 Fork._
 
 ## 技术实现
 - [x] React
