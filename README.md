@@ -2,9 +2,16 @@
 > 一个React+Redux版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 
 ## 技术实现
-> 采用React+Redux+ES6+webpack+antd实现
-
-> React-hot-load 热替换
+- [x] React
+- [x] Redux
+- [x] React-router
+- [x] redux-thunk
+- [x] fetch
+- [x] ES6
+- [x] webpack
+- [x] antd
+- [x] babel
+- [x] react-hot-loader
  
 ## 运行
 - 安装 `npm install(yarn)`
