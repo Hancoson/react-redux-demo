@@ -16,11 +16,11 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loaders: ['react-hot', 'babel?' + JSON.stringify({presets: ['react', 'es2015']})]
+        loaders: ['react-hot', 'babel?' + JSON.stringify({ presets: ['react', 'es2015'] })]
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugins.extract(['css','sass'])
+        loader: ExtractTextPlugins.extract(['css', 'sass'])
       },
       {
         test: [/\.js$/, /\.es6$/],

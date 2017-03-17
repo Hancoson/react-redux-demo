@@ -2,44 +2,44 @@
  * @author Guoxing.Han(hancoson#163.com)
  * @time 2016/12/29.
  */
-var path               = require("path");
-var webpack            = require('webpack');
+var path = require("path");
+var webpack = require('webpack');
 var ExtractTextPlugins = require('extract-text-webpack-plugin');
 
 module.exports = {
-	entry    : {
+	entry: {
 		main: [
 			'./app/app.js',
 			'webpack-dev-server/client?http://localhost:8089',
 			'webpack/hot/only-dev-server'
 		]
 	},
-	output   : {
+	output: {
 		publicPath: 'http://localhost:8089/',
 		filename: './dist/js/bundle.js'
 		/*path      : path.resolve(__dirname, 'dist'),
 		publicPath: "./dist/js/",
 		filename  : "bundles.js"*/
 	},
-	module   : {
+	module: {
 		loaders: [
 			{
-				test   : /\.js$/,
+				test: /\.js$/,
 				exclude: /node_modules/,
-				loaders: ['react-hot', 'babel?' + JSON.stringify({presets: ['react', 'es2015']})]
+				loaders: ['react-hot', 'babel?' + JSON.stringify({ presets: ['react', 'es2015'] })]
 			},
 			{
-				test  : /\.scss$/,
-				loader:'style!css!sass'
+				test: /\.scss$/,
+				loader: 'style!css!sass'
 			}
 		]
 	},
-	plugins  : [
+	plugins: [
 		new ExtractTextPlugins('./dist/style/main.css', {
 			allChunks: true
 		})
 	],
-	resolve  : {
+	resolve: {
 		extension: ['', '.js', '.es6']
 	},
 	devServer: {
