@@ -2,7 +2,7 @@
  * @author Guoxing.Han(hancoson#163.com)
  * @time 2016/12/29.
  */
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 
 export default class About extends Component {
 
@@ -35,20 +35,20 @@ export default class About extends Component {
         <section>
           <h1>目录结构</h1>
           <pre>
-            ├─app<br/>
-            │  ├─actions //redux动作生成器<br/>
-            │  ├─assets  //静态资源<br/>
-            │  │  ├─img<br/>
-            │  │  └─scss<br/>
-            │  ├─compontens //UI组建<br/>
-            │  ├─constants  //常量<br/>
-            │  ├─containers //包装器<br/>
-            │  ├─reducers //reducers<br/>
-            │  ├─routes //路由<br/>
-            │  ├─store //store<br/>
-            │  └─utils //工具函数<br/>
-            └─dist //发布目录<br/>
-            &nbsp;&nbsp;├─js<br/>
+            ├─app<br />
+            │  ├─actions //redux动作生成器<br />
+            │  ├─assets  //静态资源<br />
+            │  │  ├─img<br />
+            │  │  └─scss<br />
+            │  ├─compontens //UI组建<br />
+            │  ├─constants  //常量<br />
+            │  ├─containers //包装器<br />
+            │  ├─reducers //reducers<br />
+            │  ├─routes //路由<br />
+            │  ├─store //store<br />
+            │  └─utils //工具函数<br />
+            └─dist //发布目录<br />
+            &nbsp;&nbsp;├─js<br />
             &nbsp;&nbsp;└─style
           </pre>
         </section>

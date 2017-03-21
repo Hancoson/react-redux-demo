@@ -2,11 +2,11 @@
  * @author Guoxing.Han(hancoson#163.com)
  * @time 2016/12/29.
  */
-import React, {Component} from 'react'
-import {IndexLink, Link} from 'react-router'
+import React, { Component } from 'react'
+import { IndexLink, Link } from 'react-router'
 
-import {Menu, Icon} from 'antd';
-const SubMenu       = Menu.SubMenu;
+import { Menu, Icon } from 'antd';
+const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 export default class NavBar extends Component {
   constructor(porps) {

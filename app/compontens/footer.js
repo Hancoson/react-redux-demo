@@ -2,7 +2,7 @@
  * @author Guoxing.Han(hancoson#163.com)
  * @time 2017/1/11.
  */
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 export default class Footer extends Component {
 
   render() {

@@ -4,7 +4,7 @@
  * @time 2017/1/10.
  */
 //获取当天时间并格式化
-export const getDate   = () => {
+export const getDate = () => {
   let d = new Date();
   let m = d.getMonth() + 1;
   if (m < 10) {
@@ -17,17 +17,17 @@ export const getDate   = () => {
 //格式化时间
 export const subString = str => {
   let _y = '', _m = '', _d = '';
-  _y     = str.substring(0, 4);
-  _m     = str.substring(4, 6);
-  _d     = str.substring(6, 8);
+  _y = str.substring(0, 4);
+  _m = str.substring(4, 6);
+  _d = str.substring(6, 8);
   return (_y + '/' + _m + '/' + _d)
 
 }
 //格式化时间
 export const timeClear = str => {
-  let _t='';
-  str.split('-').forEach((i)=>{
-    _t=_t+i.toString()
+  let _t = '';
+  str.split('-').forEach((i) => {
+    _t = _t + i.toString()
   })
   return _t
 

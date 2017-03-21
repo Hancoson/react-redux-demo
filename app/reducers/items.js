@@ -3,9 +3,9 @@
  * @time 2017/1/5.
  */
 import actionType from '../constants/actionType';
-const _default={
-  data:'',
-  stories:[]
+const _default = {
+  data: '',
+  stories: []
 }
 const itemsReducer = (state = _default, action) => {
 
