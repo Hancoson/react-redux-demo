@@ -2,6 +2,7 @@
  * @author Guoxing.Han(hancoson#163.com)
  * @time 2016/12/29.
  */
+import Promise from 'promise-polyfill' //支持IE
 import React from 'react'  // 引入React
 import { render } from 'react-dom' // 引入render方法
 import { Provider } from 'react-redux' // 利用Provider可以使我们的 store 能为下面的组件所用
@@ -15,6 +16,9 @@ import reducer from './reducers'  // 引入reducers集合
 import routes from './routes'   // 引入路由配置
 
 import './assets/scss/main.scss'  // 引入样式文件
+
+// To add to window  
+if (!window.Promise) window.Promise = Promise;
 
 // 给增强后的store传入reducer
 const store = finalCreateStore(reducer);

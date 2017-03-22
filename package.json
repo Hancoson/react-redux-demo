@@ -1,6 +1,6 @@
 {
   "name": "react-redux",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A react-redux ZhihuDaily demo",
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "isomorphic-fetch": "^2.2.1",
     "keymirror": "^0.1.1",
     "object-assign": "^4.1.0",
+    "promise-polyfill": "^6.0.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^5.0.1",

@@ -17,17 +17,17 @@ export const emptyData = () => {
 export const fetchPosts = (time) => {
   return dispatch => {
     return fetch(Config.YAHOO + Config.API + time + Config.YAHOO_SUFFIX)
-      .then((res) => {
+      .then(res => {
         return res.json()
       })
-      .then((data) => {
+      .then(data => {
         data = data.query.results.json;
         dispatch({
           type: 'GETSUCCESS',
           data: assign({}, data)
         })
       })
-      .catch((e) => {
+      .catch(e => {
         console.log(e.message)
       })
   }
@@ -37,10 +37,10 @@ export const fetchPosts = (time) => {
 export const fetchDetailPosts = (id) => {
   return dispatch => {
     return fetch(Config.YAHOO + Config.NEWS + id + Config.YAHOO_SUFFIX)
-      .then((res) => {
+      .then(res => {
         return res.json()
       })
-      .then((data) => {
+      .then(data => {
         data = data.query.results.json;
         console.log(data)
         dispatch({
@@ -48,7 +48,7 @@ export const fetchDetailPosts = (id) => {
           data: assign({}, data)
         })
       })
-      .catch((e) => {
+      .catch(e => {
         console.log(e.message)
       })
   }
