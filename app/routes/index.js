@@ -5,9 +5,9 @@
 import React from 'react' // 引入react
 import { Route, IndexRoute } from 'react-router' // 引入react路由
 
-import App from './../containers/app'
-import Index from './../containers/index'
-import About from './../containers/about'
+import App from './../compontens/app'
+import Index from './../compontens/index'
+import About from './../compontens/about'
 import Items from './../containers/items'
 import Detail from './../containers/detail'
 
