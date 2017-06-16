@@ -3,8 +3,8 @@
  * @time 2016/12/29.
  */
 
-import { connect } from 'react-redux'
-import { fetchDetailPosts, emptyData } from '../actions/index'
+import {connect} from 'react-redux'
+import {fetchDetailPosts, emptyData} from '../actions/index'
 import Detail from '../compontens/detail'
 
 const fetchDetailData = id => {
@@ -13,11 +13,7 @@ const fetchDetailData = id => {
   }
 }
 const getDetail = state => {
-  return {
-    detail: state.detailReducer
-  }
+  return {detail: state.detailReducer}
 }
 
-export default connect(getDetail,
-  { fetchDetailData, emptyData }
-)(Detail)
+export default connect(getDetail, {fetchDetailData, emptyData})(Detail)
