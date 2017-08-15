@@ -7,7 +7,6 @@
 - [x] React
 - [x] Redux
 - [x] React-router
-- [x] redux-thunk
 - [x] fetch
 - [x] ES6
 - [x] webpack
