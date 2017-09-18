@@ -2,12 +2,11 @@
  * @author Guoxing.Han(hancoson#163.com)
  * @time 2016/12/29.
  */
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { fetchPosts, emptyData } from '../actions/index'
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {fetchPosts, emptyData} from '../actions/index'
 import Items from '../compontens/itemsList'
-import { getDate } from './../utils/getDate'
-
+import {getDate} from './../utils/getDate'
 
 //通过日期选择获取数据
 const fetchData = (t) => {
@@ -23,16 +22,11 @@ const defaultFetchData = () => {
 }
 
 const getItems = state => {
-  return {
-    items: state.itemsReducer
-  }
+  return {items: state.itemsReducer}
 }
 
 /**
  * @getItems (state)
  * @defaultFetchData, @fetchData, @emptyData (dispatch)
  */
-export default connect(
-  getItems,
-  { defaultFetchData, fetchData, emptyData }
-)(Items)
+export default connect(getItems, {defaultFetchData, fetchData, emptyData})(Items)
