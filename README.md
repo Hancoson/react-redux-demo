@@ -17,7 +17,7 @@
 ## 运行
 - 安装 `npm install(yarn)`
 - 启动 `npm start`
-- 构建 `npm build`
+- 构建 `npm run build`
  
 ## 目录结构
 ```$xslt
