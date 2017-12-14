@@ -1,4 +1,8 @@
 # React-redux Zhihu Daily
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/Hancoson/react-redux-demo) 
+[![CDNJS](https://img.shields.io/cdnjs/v/jquery.svg)](https://github.com/Hancoson/react-redux-demo)
+[![Packagist](https://img.shields.io/packagist/l/doctrine/orm.svg)]([![CDNJS](https://img.shields.io/cdnjs/v/jquery.svg)](https://github.com/Hancoson/react-redux-demo))
+
 > 一个React+Redux版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 
 > _你觉得好就给个 Star 或者 Watch 吧，不要 Fork._
