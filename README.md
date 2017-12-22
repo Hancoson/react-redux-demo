@@ -1,4 +1,6 @@
 # React-redux Zhihu Daily
+[![GitHub license](https://img.shields.io/github/license/Hancoson/react-redux-demo.svg)](https://github.com/Hancoson/react-redux-demo/blob/master/LICENSE)
+
 > 一个React+Redux版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 
 > _你觉得好就给个 Star 或者 Watch 吧，不要 Fork._
