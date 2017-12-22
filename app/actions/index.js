@@ -13,7 +13,11 @@ export const emptyData = () => {
   }
 }
 
-//获取列表数据
+/**
+ * 获取列表数据
+ * 异步 action 返回函数 参数为 dispatch
+ * @param {*} time 
+ */
 export const fetchPosts = (time) => {
   return dispatch => {
     return fetch(Config.YAHOO + Config.API + time + Config.YAHOO_SUFFIX)
