@@ -13,7 +13,7 @@ import { syncHistoryWithStore } from 'react-router-redux' // 利用react-router-
 
 import finalCreateStore from './store/configureStore'  //引入store配置
 import reducer from './reducers'  // 引入reducers集合
-import routes from './routes'   // 引入路由配置
+import routes from './routers'   // 引入路由配置
 
 import './assets/scss/main.scss'  // 引入样式文件
 
