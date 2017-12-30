@@ -1,5 +1,6 @@
 # React-redux Zhihu Daily
 [![GitHub license](https://img.shields.io/github/license/Hancoson/react-redux-demo.svg)](https://github.com/Hancoson/react-redux-demo/blob/master/LICENSE)
+[![Travis](https://img.shields.io/travis/Hancoson/react-redux-demo/master.svg)](https://travis-ci.org/Hancoson/react-redux-demo)
 
 > 一个React+Redux版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 
