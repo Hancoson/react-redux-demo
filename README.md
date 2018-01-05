@@ -1,4 +1,5 @@
 # React-redux Zhihu Daily
+[![GitHub package version](https://img.shields.io/github/package-json/v/Hancoson/react-redux-demo.svg)](https://github.com/Hancoson/react-redux-demo)
 [![GitHub license](https://img.shields.io/github/license/Hancoson/react-redux-demo.svg)](https://github.com/Hancoson/react-redux-demo/blob/master/LICENSE)
 [![Travis](https://img.shields.io/travis/Hancoson/react-redux-demo/master.svg)](https://travis-ci.org/Hancoson/react-redux-demo)
 
