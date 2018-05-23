@@ -3,20 +3,23 @@
  * @time 2017/1/5.
  */
 import actionType from '../constants/actionType';
-const _default = {
+
+const initialState = {
   data: '',
   stories: []
 }
-const itemsReducer = (state = _default, action) => {
 
-  switch (action.type) {
-    case actionType.GETSUCCESS:
-      return action.data;
+const itemsReducer = (state = initialState, action) => {
+  if (action) {
+    switch (action.type) {
+      case actionType.GETSUCCESS:
+        return action.data;
 
-    case actionType.EMPTYDATA:
-      return _default;
-    default:
-      return state;
+      case actionType.EMPTYDATA:
+        return initialState;
+      default:
+        return state;
+    }
   }
 };
 
