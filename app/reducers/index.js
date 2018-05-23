@@ -4,6 +4,7 @@
  */
 
 import { combineReducers } from 'redux' // 利用combineReducers 合并reducers
+//import { combineReducers } from 'redux-immutablejs'
 import { routerReducer } from 'react-router-redux' // 将routerReducer一起合并管理
 import itemsReducer from './items'
 import detailReducer from './detail'

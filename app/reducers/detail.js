@@ -4,7 +4,9 @@
  */
 import actionType from '../constants/actionType';
 
-const detailReducer = (state = {}, action) => {
+const initialState = {}
+
+const detailReducer = (state = initialState, action) => {
 
   switch (action.type) {
     case actionType.DETAILDATA:
