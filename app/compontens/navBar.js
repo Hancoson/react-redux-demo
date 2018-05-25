@@ -2,10 +2,10 @@
  * @author Guoxing.Han(hancoson#163.com)
  * @time 2016/12/29.
  */
-import React, {Component} from 'react'
-import {IndexLink, Link} from 'react-router'
+import React, { Component } from 'react'
+import { IndexLink, Link } from 'react-router'
 
-import {Menu, Icon} from 'antd';
+import { Menu, Icon } from 'antd';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 export default class NavBar extends Component {
@@ -19,16 +19,15 @@ export default class NavBar extends Component {
   }
 
   handleClick(e) {
-    console.log('click ', e);
-    this.setState({current: e.key});
+    this.setState({ current: e.key });
   }
 
   render() {
     return (
       <Menu
         onClick={this
-        .handleClick
-        .bind(this)}
+          .handleClick
+          .bind(this)}
         selectedKeys={[this.state.current]}
         mode="horizontal">
         <Menu.Item key="/index">

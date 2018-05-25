@@ -35,6 +35,9 @@ module.exports = {
 		]
 	},
 	plugins: [
+		new webpack.DefinePlugin({
+			'process.env.NODE_ENV': JSON.stringify('dev')
+		}),
 		new ExtractTextPlugins('./dist/style/main.css', {
 			allChunks: true
 		})

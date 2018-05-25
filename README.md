@@ -13,6 +13,7 @@
 ## 技术实现
 - [x] React
 - [x] Redux
+- [x] redux-saga
 - [x] React-router
 - [x] fetch
 - [x] ES6
@@ -23,8 +24,9 @@
  
 ## 运行
 - 安装 `npm install(yarn)`
-- 启动 `npm start`
+- dev `npm run dev`
 - 构建 `npm run build`
+- 启动 `npm start`
  
 ## 目录结构
 ```$xslt
