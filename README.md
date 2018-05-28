@@ -20,6 +20,7 @@
 - [x] antd
 - [x] babel
 - [x] react-hot-loader
+- [x] jest
  
 ## 运行
 - 安装 `npm install(yarn)`
